@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home{
+  width: 100%;
+  height:100vh;
+  background-color: rgb(226, 189, 189);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*  Header */
+
+#header{
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+   width: 100%;
+   height: 70px;
+   background-color: rgb(229, 223, 136);
+   padding: 10px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#logo h1{
+   font-size: 35px;
+   color:#0c0b0b;
+   font-weight: 600;
+   cursor: pointer;
+
+}
+#header #nav{
+  list-style: none;
+}
+#header #nav  li{
+  display: inline-block;
+  padding : 10px 40px;
+  cursor: pointer;
+}
+
+#header #nav li a{
+  color:#121010;
+  font-size: 16px;
+  font-weight: 510;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#header #btn{
+  padding: 10px 50px;
+}
+button{
+  width: 120px;
+  height: 40px;
+  background-color: rgb(191, 255, 0);
+  border: 1px solid  rgb(191, 255, 0);
+  border-radius: 5px;
+  color: #101310;
+  cursor: pointer;
+}
+
+
+/* Main */
+
+#main{
+
   display: flex;
-  flex-direction: column;
+  height:80%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url(./images/card1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+#col1{
+  flex-basis:85%;
+  
+  padding: 10px 12px;
+  padding-bottom: 250px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+#col1 h2{
+ font-size: 35px;
+ color:  rgb(14, 15, 13);
+ background-color: rgb(191, 255, 0);
+  width: 220px;
+  height:50px;
+  text-align: center;
+ font-weight: 600;
+}
+#col1 p{
+  font-size:20px;
+  color:  rgb(4, 4, 3);
+  font-weight: 500;
+  margin-top: 20px;
+}
+#col1 button{
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+   width:400px;
+   height:200px;
+   display: inline-block;
+   margin:10px 15px;
+   padding:15px 25px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
